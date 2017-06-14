@@ -38,3 +38,13 @@ func main() {
 	value := qrcode.Decode("./test.png")  
 	fmt.Println(value)
 }
+
+#如何安装zbar
+sudo yum -y install pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev 
+wget http://downloads.sourceforge.net/project/zbar/zbar/0.10/zbar-0.10.tar.gz  
+tar -zvxf zbar-0.10.tar.gz  
+cd zbar-0.10
+./configure --without-imagemagick –disable-video –without-qt –without-gtk –without-x   
+make  
+sudo make install  
+
