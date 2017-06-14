@@ -39,7 +39,7 @@ func main() {
 	fmt.Println(value)
 }
 
-#如何安装zbar
+# 如何安装zbar
 sudo yum -y install pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev 
 wget http://downloads.sourceforge.net/project/zbar/zbar/0.10/zbar-0.10.tar.gz  
 tar -zvxf zbar-0.10.tar.gz  
