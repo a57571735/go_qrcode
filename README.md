@@ -40,7 +40,19 @@ func main() {
 }
 
 # 如何安装zbar
-sudo yum -y install epel-release pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev 
+sudo yum -y install epel-release pygtk2.x86_64 zbar-pygtk.x86_64 pygtk2-devel.x86_64 pygtk2-doc.noarch pygobject2.x86_64 pygobject2-devel.x86_64 pygobject2-doc.x86_64  gtk2 gtk2-devel gtk2-devel-docs pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev PyQt4.x86_64 PyQt4-devel.x86_64
+
+wget http://ftp.gnome.org/pub/GNOME/sources/pygtk/2.24/pygtk-2.24.0.tar.gz
+
+tar -zvxf pygtk-2.24.0.tar.gz
+
+cd pygtk-2.24.0
+
+./configure
+
+make  
+
+sudo make install  
 
 wget http://downloads.sourceforge.net/project/zbar/zbar/0.10/zbar-0.10.tar.gz  
 
@@ -48,7 +60,7 @@ tar -zvxf zbar-0.10.tar.gz
 
 cd zbar-0.10
 
-./configure --without-imagemagick --disable-video --without-qt --without-gtk --without-x 
+./configure --disable-video
 
 make  
 
