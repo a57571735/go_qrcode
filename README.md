@@ -14,7 +14,7 @@ import (
 	"image/png"  
 	"os"  
 
-	"github.com/happyEgg/go_qrcode"
+	qrcode "github.com/happyEgg/go_qrcode"
 )
 
 func main() {  
