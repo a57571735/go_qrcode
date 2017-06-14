@@ -48,7 +48,7 @@ tar -zvxf zbar-0.10.tar.gz
 
 cd zbar-0.10
 
-./configure --without-imagemagick –disable-video –without-qt –without-gtk –without-x   
+./configure --without-imagemagick --disable-video --without-qt --without-gtk --without-x 
 
 make  
 
