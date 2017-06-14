@@ -40,7 +40,7 @@ func main() {
 }
 
 # 如何安装zbar
-sudo yum -y install pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev 
+sudo yum -y install epel-release pdftk ImageMagick ImageMagick-devel ghostscript Python-imaging python-devel python-gtk2-dev libqt4-dev 
 
 wget http://downloads.sourceforge.net/project/zbar/zbar/0.10/zbar-0.10.tar.gz  
 
